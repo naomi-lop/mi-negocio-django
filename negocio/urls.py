@@ -4,7 +4,7 @@ from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('tienda.urls')),
+    path('hola', include('tienda.urls')),
     
     # Autenticación
     path('login/', auth_views.LoginView.as_view(template_name='registration/login.html'), name='login'),
